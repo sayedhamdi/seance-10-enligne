@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        width: 24%;
+        height: 250px;
+        background: blue;
+      }
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .card {
+          width: 30%;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        .card {
+          width: 90%;
+          display: flex;
+        }
+        .p {
+          width: 30%;
+        }
+        .img {
+          width: 70%;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .card {
+          width: 24%;
+        }
+      }
+      .card div img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- layout -->
+    <!-- interface -->
+    <!-- composition de la page -->
+    <div class="container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card">
+        <div class="img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
+            alt=""
+          />
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          labore optio assumenda, quo reiciendis laborum pariatur ea sit
+          delectus culpa! Suscipit aliquam quae sed! Quod molestias illo cumque!
+          Magnam, dolor!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
